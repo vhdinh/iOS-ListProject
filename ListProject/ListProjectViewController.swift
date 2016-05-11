@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ListProjectViewController: UITableViewController {
+class ListProjectViewController: UITableViewController, CancelButtonDelegate {
 
-    var spankings = ["Dylan", "Kris"]
+    var instructors = ["Dylan", "Kris"]
     
+    func cancelButtonPressedFrom(controller: UIViewController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +30,13 @@ class ListProjectViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("SpankingCell")!
-        cell.textLabel?.text = spankings[indexPath.row]
+        cell.textLabel?.text = instructors[indexPath.row]
         return cell
     }
     
 
     override func tableView(tableiew: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return spankings.count
+        return instructors.count
     }
 }
 

@@ -9,5 +9,15 @@
 import UIKit
 
 class AddNewItemController: UITableViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    weak var cancelButtonDelegate: CancelButtonDelegate?
+    @IBAction func cancelBarButtonPressed(sender: UIBarButtonItem) {
+        print(sender)
+//        CancelButtonDelegate?.cancelButtonPressedFrom(self)
+    }
+    
     
 }

@@ -16,6 +16,7 @@
 		411E02841CE396E300A0D149 /* ListProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E02831CE396E300A0D149 /* ListProjectUITests.swift */; };
 		A61E984D1CE39D8D00B5B7A5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A61E984C1CE39D8D00B5B7A5 /* .gitignore */; };
 		A61E984F1CE39E0C00B5B7A5 /* AddNewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E984E1CE39E0C00B5B7A5 /* AddNewItemController.swift */; };
+		A61E98511CE3A00B00B5B7A5 /* CancelButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E98501CE3A00B00B5B7A5 /* CancelButtonDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		411E02851CE396E300A0D149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A61E984C1CE39D8D00B5B7A5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A61E984E1CE39E0C00B5B7A5 /* AddNewItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemController.swift; sourceTree = "<group>"; };
+		A61E98501CE3A00B00B5B7A5 /* CancelButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButtonDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				411E02631CE396E300A0D149 /* AppDelegate.swift */,
 				411E02651CE396E300A0D149 /* ListProjectViewController.swift */,
 				411E02671CE396E300A0D149 /* Main.storyboard */,
+				A61E98501CE3A00B00B5B7A5 /* CancelButtonDelegate.swift */,
 				A61E984E1CE39E0C00B5B7A5 /* AddNewItemController.swift */,
 				411E026A1CE396E300A0D149 /* Assets.xcassets */,
 				411E026C1CE396E300A0D149 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			files = (
 				411E02661CE396E300A0D149 /* ListProjectViewController.swift in Sources */,
 				411E02641CE396E300A0D149 /* AppDelegate.swift in Sources */,
+				A61E98511CE3A00B00B5B7A5 /* CancelButtonDelegate.swift in Sources */,
 				A61E984F1CE39E0C00B5B7A5 /* AddNewItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
