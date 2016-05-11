@@ -26,11 +26,14 @@ class ListProjectViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SpankingCell")
+        let cell = tableView.dequeueReusableCellWithIdentifier("SpankingCell")!
         cell.textLabel?.text = spankings[indexPath.row]
         return cell
     }
     
 
+    override func tableView(tableiew: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return spankings.count
+    }
 }
 
