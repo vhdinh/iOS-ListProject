@@ -15,6 +15,7 @@
 		411E02791CE396E300A0D149 /* ListProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E02781CE396E300A0D149 /* ListProjectTests.swift */; };
 		411E02841CE396E300A0D149 /* ListProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E02831CE396E300A0D149 /* ListProjectUITests.swift */; };
 		A61E984D1CE39D8D00B5B7A5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A61E984C1CE39D8D00B5B7A5 /* .gitignore */; };
+		A61E984F1CE39E0C00B5B7A5 /* AddNewItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E984E1CE39E0C00B5B7A5 /* AddNewItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		411E02831CE396E300A0D149 /* ListProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProjectUITests.swift; sourceTree = "<group>"; };
 		411E02851CE396E300A0D149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A61E984C1CE39D8D00B5B7A5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A61E984E1CE39E0C00B5B7A5 /* AddNewItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				411E02631CE396E300A0D149 /* AppDelegate.swift */,
 				411E02651CE396E300A0D149 /* ListProjectViewController.swift */,
 				411E02671CE396E300A0D149 /* Main.storyboard */,
+				A61E984E1CE39E0C00B5B7A5 /* AddNewItemController.swift */,
 				411E026A1CE396E300A0D149 /* Assets.xcassets */,
 				411E026C1CE396E300A0D149 /* LaunchScreen.storyboard */,
 				411E026F1CE396E300A0D149 /* Info.plist */,
@@ -262,6 +265,7 @@
 			files = (
 				411E02661CE396E300A0D149 /* ListProjectViewController.swift in Sources */,
 				411E02641CE396E300A0D149 /* AppDelegate.swift in Sources */,
+				A61E984F1CE39E0C00B5B7A5 /* AddNewItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
