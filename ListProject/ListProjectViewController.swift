@@ -8,9 +8,20 @@
 
 import UIKit
 
-class ListProjectViewController: UITableViewController {
+class ListProjectViewController: UITableViewController, CancelButtonDelegate {
 
     var spankings = ["Dylan", "Kris"]
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "AddNewSpanking" {
+            let navigationController = segue.destinationViewController as! UINavigationController
+            let controller = navigationController.topViewController as! SpankingDetailsViewController
+            controller.cancelButtonDelegate = self
+        }
+    }
+    
+    
+    
     
     
     override func viewDidLoad() {
@@ -34,6 +45,10 @@ class ListProjectViewController: UITableViewController {
 
     override func tableView(tableiew: UITableView, numberOfRowsInSection section: Int) -> Int {
         return spankings.count
+    }
+    
+    func cancelButtonPressedFrom(controller: UIViewController) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
