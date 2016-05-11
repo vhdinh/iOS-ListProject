@@ -87,8 +87,15 @@
                                 <action selector="cancelButtonPressed:" destination="NH7-PW-kxx" id="ixp-e7-tpm"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hsa-35-i8A"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hsa-35-i8A">
+                            <connections>
+                                <action selector="doneBarButtonPressed:" destination="NH7-PW-kxx" id="jyN-cj-EHS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="newSpankingTextField" destination="0rm-I4-rv5" id="n0Z-Xd-gxN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epn-Jn-6se" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

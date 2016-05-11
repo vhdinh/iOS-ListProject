@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListProjectViewController: UITableViewController, CancelButtonDelegate {
+class ListProjectViewController: UITableViewController, CancelButtonDelegate, SpankingDetailsViewControllerDelegate {
 
     var spankings = ["Dylan", "Kris"]
     
@@ -17,9 +17,15 @@ class ListProjectViewController: UITableViewController, CancelButtonDelegate {
             let navigationController = segue.destinationViewController as! UINavigationController
             let controller = navigationController.topViewController as! SpankingDetailsViewController
             controller.cancelButtonDelegate = self
+            controller.delegate = self
         }
     }
     
+    func spankingDetailsViewController(controller: SpankingDetailsViewController, didFinishAddingSpanking spanking: String) {
+        dismissViewControllerAnimated(true, completion: nil)
+        spankings.append(spanking)
+        tableView.reloadData()
+    }
     
     
     

@@ -10,6 +10,8 @@ import UIKit
 
 class SpankingDetailsViewController: UITableViewController {
     weak var cancelButtonDelegate: CancelButtonDelegate?
+    weak var delegate : SpankingDetailsViewControllerDelegate?
+    @IBOutlet weak var newSpankingTextField: UITextField!
     
 
     @IBAction func cancelButtonPressed(sender: UIBarButtonItem) {
@@ -17,5 +19,10 @@ class SpankingDetailsViewController: UITableViewController {
 
     }
     
+    @IBAction func doneBarButtonPressed(sender: UIBarButtonItem) {
+        delegate?.spankingDetailsViewController(self, didFinishAddingSpanking: newSpankingTextField.text!)
+
+    }
+
     
 }
