@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--People To Spank-->
@@ -40,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="1106" y="402"/>
         </scene>
-        <!--Table View Controller-->
+        <!--AddNewItemController-->
         <scene sceneID="XLL-Sc-oFm">
             <objects>
-                <tableViewController id="NH7-PW-kxx" sceneMemberID="viewController">
+                <tableViewController title="AddNewItemController" id="NH7-PW-kxx" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gha-Js-crg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +56,19 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BK4-fm-prW" id="kPc-r8-t2x">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="qwrwqr" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ab-IT-xra">
+                                            <rect key="frame" x="8" y="0.0" width="584" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2Ab-IT-xra" firstAttribute="top" secondItem="kPc-r8-t2x" secondAttribute="topMargin" constant="-8" id="16t-x1-9uS"/>
+                                        <constraint firstItem="2Ab-IT-xra" firstAttribute="trailing" secondItem="kPc-r8-t2x" secondAttribute="trailingMargin" id="TKZ-uO-WzJ"/>
+                                        <constraint firstItem="2Ab-IT-xra" firstAttribute="leading" secondItem="kPc-r8-t2x" secondAttribute="leadingMargin" id="gjS-wW-Oqr"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2Ab-IT-xra" secondAttribute="bottom" constant="-8" id="jeE-N6-hi3"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
